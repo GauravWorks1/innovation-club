@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { 
@@ -9,17 +10,14 @@ import {
 export default function InnovationClub() {
   return (
     <div className="min-h-screen bg-[#0a0b1e] text-white selection:bg-cyan-500/30">
-      
-  
-      
 
       {/* --- HERO SECTION (Image 1) --- */}
-      <section className="pt-40 pb-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section className="pt-24 pb-12 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-7xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
-            THE<br />DIGITAL<br />
+            STUDENT<br />INNOVATION<br />
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-purple-600 bg-clip-text text-transparent">
-              NEXUS
+              COUNCIL
             </span>
           </h1>
           <p className="text-gray-400 text-lg max-w-md border-l-2 border-purple-500 pl-4 mb-10">
@@ -35,16 +33,37 @@ export default function InnovationClub() {
           </div>
         </div>
 
-        {/* Visual Element (The Globe from SS1) */}
-        <div className="relative flex justify-center">
-          <div className="absolute -inset-4 border border-cyan-500/20 rounded-full animate-pulse"></div>
-          <div className="w-80 h-80 bg-gradient-to-tr from-purple-900/40 to-cyan-900/40 rounded-full flex items-center justify-center border border-white/10">
-             <div className="text-center font-mono text-[10px] text-cyan-400 uppercase tracking-[0.2em]">
-                COORD: 34.0522° N <br/>
-                STATUS: ACTIVE
-             </div>
-          </div>
-        </div>
+       <div className="relative flex justify-center lg:justify-end group">
+  {/* The Outer Glowing Frame */}
+  <div className="relative w-80 h-80 md:w-[450px] md:h-[450px] flex items-center justify-center">
+    
+    {/* Animated Background Rings */}
+    <div className="absolute inset-0 border border-cyan-500/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
+    <div className="absolute inset-4 border border-purple-500/10 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+    
+    {/* Glass Morphic Container for the Logo */}
+    <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-purple-900/20 to-cyan-900/20 rounded-3xl backdrop-blur-xl border border-white/10 flex items-center justify-center p-8 shadow-2xl shadow-cyan-500/10 overflow-hidden">
+      
+      {/* The Logo Image */}
+      <div className="relative w-full h-full transform group-hover:scale-110 transition-transform duration-500">
+        <Image 
+          src="/siclogo.png" 
+          alt="SIC TGPCET Official Logo" 
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+
+      {/* Subtle Scanner Line Effect */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-20 animate-[pan-y_3s_linear_infinite]"></div>
+    </div>
+
+    {/* Decorative Corner Brackets */}
+    <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500/50"></div>
+    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-purple-500/50"></div>
+  </div>
+</div>
       </section>
 
       {/* --- CORE DIRECTIVES (Image 2 & 3) --- */}
