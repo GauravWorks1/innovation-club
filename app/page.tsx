@@ -1,37 +1,17 @@
 "use client";
+import Link from 'next/link';
 import React from 'react';
 import { 
   Globe, Handshake, Zap, Rocket, 
-  Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Github, ChevronRight 
+  ChevronRight 
 } from 'lucide-react';
 
 export default function InnovationClub() {
   return (
     <div className="min-h-screen bg-[#0a0b1e] text-white selection:bg-cyan-500/30">
       
-      {/* --- NAVIGATION --- */}
-      <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-[#0a0b1e]/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <Zap size={24} fill="white" />
-            </div>
-            <div className="leading-tight font-bold text-xl tracking-tight">
-              Innovation<br/><span className="font-light">Club</span>
-            </div>
-          </div>
-          
-          <div className="hidden lg:flex items-center gap-8 text-[13px] uppercase tracking-widest text-gray-400">
-            <a href="#" className="text-cyan-400 border-b border-cyan-400 pb-1">Home</a>
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#team" className="hover:text-white transition">Team</a>
-            <a href="#events" className="hover:text-white transition">Events</a>
-            <a href="#projects" className="hover:text-white transition">Projects</a>
-            <a href="#achievements" className="hover:text-white transition">Achievements</a>
-            <button className="bg-white/5 border border-white/20 px-4 py-2 hover:bg-white/10 transition">Join Us</button>
-          </div>
-        </div>
-      </nav>
+  
+      
 
       {/* --- HERO SECTION (Image 1) --- */}
       <section className="pt-40 pb-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -99,46 +79,8 @@ export default function InnovationClub() {
         </div>
       </section>
 
-      {/* --- FOOTER (Image 4) --- */}
-      <footer className="bg-[#050614] border-t border-white/5 pt-20 pb-10 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <Zap className="text-blue-500" />
-              <span className="font-bold text-xl">Innovation Club</span>
-            </div>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Empowering students to innovate, research, and solve real-world problems through cutting-edge technology.
-            </p>
-            <div className="flex gap-4">
-              <SocialIcon icon={<Facebook size={18}/>} />
-              <SocialIcon icon={<Twitter size={18}/>} />
-              <SocialIcon icon={<Instagram size={18}/>} />
-              <SocialIcon icon={<Linkedin size={18}/>} />
-              <SocialIcon icon={<Github size={18}/>} />
-            </div>
-          </div>
-
-          <FooterColumn title="Quick Links" links={['About', 'Team', 'Events', 'Projects']} />
-          <FooterColumn title="Resources" links={['Gallery', 'Achievements', 'Resources', 'Industry Partners']} />
-          
-          <div>
-            <h4 className="font-bold mb-6">Contact Us</h4>
-            <div className="space-y-4 text-sm text-gray-400">
-              <div className="flex items-center gap-3"><Mail size={16} className="text-cyan-400"/> innovation@university.edu</div>
-              <div className="flex items-start gap-3"><MapPin size={16} className="text-cyan-400"/> Innovation Lab, Building A<br/>University Campus</div>
-              <button className="mt-4 border border-cyan-400/50 text-cyan-400 px-6 py-2 hover:bg-cyan-400 hover:text-black transition text-sm">Get in Touch</button>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto border-t border-white/5 pt-8 flex justify-between text-xs text-gray-600 uppercase tracking-widest">
-          <p>© 2026 Student Innovation Club. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#">Announcements</a>
-            <a href="#">Join Us</a>
-          </div>
-        </div>
-      </footer>
+     
+     
     </div>
   );
 }
@@ -161,21 +103,5 @@ function DirectiveCard({ icon, title, desc }: { icon: React.ReactNode, title: st
   );
 }
 
-function SocialIcon({ icon }: { icon: React.ReactNode }) {
-  return (
-    <a href="#" className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-cyan-400 hover:text-black transition">
-      {icon}
-    </a>
-  );
-}
 
-function FooterColumn({ title, links }: { title: string, links: string[] }) {
-  return (
-    <div>
-      <h4 className="font-bold mb-6">{title}</h4>
-      <ul className="space-y-3 text-sm text-gray-500">
-        {links.map(link => <li key={link} className="hover:text-cyan-400 cursor-pointer">{link}</li>)}
-      </ul>
-    </div>
-  );
-}
+
