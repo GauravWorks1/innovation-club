@@ -4,7 +4,8 @@ import Link from 'next/link';
 import React from 'react';
 import { 
   Globe, Handshake, Zap, Rocket, 
-  ChevronRight 
+  ChevronRight, 
+  ArrowRight
 } from 'lucide-react';
 
 export default function InnovationClub() {
@@ -24,12 +25,17 @@ export default function InnovationClub() {
             Empowering the next generation of innovators to research, build, and deploy solutions for a complex world.
           </p>
           <div className="flex gap-4">
-            <button className="bg-cyan-400 text-black font-bold px-8 py-4 flex items-center gap-2 hover:bg-cyan-300 transition">
-              INITIATE SEQUENCE <ChevronRight size={20} />
-            </button>
-            <button className="border border-cyan-400/50 text-cyan-400 font-mono px-8 py-4 hover:bg-cyan-400/10 transition">
+            <a 
+  href="https://forms.gle/CNEvDabGsmteDDmm6" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-2 bg-cyan-400 text-black font-bold py-4 px-8 rounded-sm hover:bg-cyan-300 transition-all uppercase tracking-tighter"
+>
+  Join Us <ArrowRight size={20} />
+</a>
+            {/* <button className="border border-cyan-400/50 text-cyan-400 font-mono px-8 py-4 hover:bg-cyan-400/10 transition">
               ACCESS DATA {`>_`}
-            </button>
+            </button> */}
           </div>
         </div>
 

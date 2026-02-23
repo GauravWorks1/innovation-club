@@ -16,8 +16,8 @@ export default function Navbar() {
     { name: 'Gallery', href: '/gallery' },
     { name: 'Achievements', href: '/achievements' },
     { name: 'Announcements', href: '/announcements' },
-    { name: 'Industry', href: '/industry' },
-    { name: 'Resources', href: '/resources' },
+   // { name: 'Industry', href: '/industry' },
+   // { name: 'Resources', href: '/resources' },
   ];
 
   return (
