@@ -14,7 +14,7 @@ export default function InnovationClub() {
       {/* --- HERO SECTION (Image 1) --- */}
       <section className="pt-24 pb-12 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-7xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
+          <h1 className="text-6xl md:text-7xl font-black leading-[0.9] tracking-tighter mb-8">
             STUDENT<br />INNOVATION<br />
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-purple-600 bg-clip-text text-transparent">
               COUNCIL
@@ -70,7 +70,7 @@ export default function InnovationClub() {
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-20">
           <div>
-            <span className="text-cyan-400 font-mono text-sm tracking-widest">//01 ——</span>
+            <span className="text-cyan-400 font-mono text-sm tracking-widest"></span>
             <h2 className="text-6xl font-bold mt-4 mb-8">CORE<br/>DIRECTIVES</h2>
             <p className="text-gray-400 text-lg">
                We are not just a club; we are an incubator for the next industrial revolution.
@@ -79,12 +79,12 @@ export default function InnovationClub() {
             {/* Stats (Image 3) */}
             <div className="flex gap-12 mt-12">
               <div>
-                <div className="text-5xl font-bold text-purple-500">50+</div>
-                <div className="text-xs uppercase tracking-widest text-gray-500 mt-2">Projects Shipped</div>
+                <div className="text-5xl font-bold text-purple-500">THINK</div>
+                
               </div>
               <div>
-                <div className="text-5xl font-bold text-cyan-400">200+</div>
-                <div className="text-xs uppercase tracking-widest text-gray-500 mt-2">Active Members</div>
+                <div className="text-5xl font-bold text-cyan-400">BEYOND</div>
+               
               </div>
             </div>
           </div>
