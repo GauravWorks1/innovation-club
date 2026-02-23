@@ -41,7 +41,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link href="/join" className="bg-cyan-500/10 border border-cyan-500/50 px-4 py-2 text-cyan-400 hover:bg-cyan-500 hover:text-black transition">
+          <Link href="https://forms.gle/CNEvDabGsmteDDmm6" className="bg-cyan-500/10 border border-cyan-500/50 px-4 py-2 text-cyan-400 hover:bg-cyan-500 hover:text-black transition">
             Join Us
           </Link>
         </div>
