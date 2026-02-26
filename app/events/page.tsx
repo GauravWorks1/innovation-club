@@ -19,7 +19,7 @@ export default function EventsPage() {
     },
     {
       id: 2,
-      title: "Startup Pitch Competition",
+      title: "TECHNOVATION 2026",
       date: "Nov 08, 2026",
       time: "02:00 PM",
       location: "Innovation Lab",

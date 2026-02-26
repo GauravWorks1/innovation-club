@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="col-span-1">
           <div className="flex items-center gap-2 mb-6">
             <Zap className="text-blue-500" />
-            <span className="font-bold text-xl">Innovation Club</span>
+            <span className="font-bold text-xl">SIC-TGPCET</span>
           </div>
           <p className="text-gray-500 text-sm leading-relaxed mb-6">
             Empowering students to innovate, research, and solve real-world problems through collaboration and cutting-edge technology.
@@ -30,8 +30,8 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-6">Contact Us</h4>
           <div className="space-y-4 text-sm text-gray-400">
-            <div className="flex items-center gap-3"><Mail size={16} className="text-cyan-400"/> innovation@university.edu</div>
-            <div className="flex items-start gap-3"><MapPin size={16} className="text-cyan-400"/> Innovation Lab, Building A<br/>University Campus</div>
+            <div className="flex items-center gap-3"><Mail size={16} className="text-cyan-400"/> tgpcetideahub@gmail.com</div>
+            <div className="flex items-start gap-3"><MapPin size={16} className="text-cyan-400"/> AICTE ideaLab, Building A<br/>University Campus</div>
             <button className="mt-4 border border-cyan-400/50 text-cyan-400 px-6 py-2 hover:bg-cyan-400 hover:text-black transition text-sm rounded">Get in Touch</button>
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,21 +9,19 @@
 }
 
 body {
-  background-color: #0a0b1e; /* Deep space blue from your SS */
+  background-color: #0a0b1e;
   color: white;
   overflow-x: hidden;
 }
-.neon-border {
-  border: 1px solid rgba(0, 242, 255, 0.2);
-  transition: all 0.3s ease;
-}
 
-.neon-border:hover {
-  border-color: #00f2ff;
-  box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
-}
-
+/* The "Glass" card effect from your screenshots */
 .glass-card {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth scrolling for the links */
+html {
+  scroll-behavior: smooth;
 }
